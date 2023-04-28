@@ -1,0 +1,76 @@
+Warning line 12: variable a not used
+Warning line 16: variable t declared but not initialisated
+
+
+
+------------------------------------------------------------
+                      Symbol table                          
+------------------------------------------------------------
+Index       Name      Scope       Type    Is init
+    0          a          2   variable          1
+    1       Test          3      class          0
+    2 travailler          3     method          0
+    3          a          4   variable          1
+    4          b          4   variable          1
+    5          i          4   variable          1
+    6          t          4   variable          0
+------------------------------------------------------------
+
+
+   Nb    Op_Code    Operand   Function
+---------------------------------------------
+    0     ENTREE         -1       main
+    1        LDC          7           
+    2     STORE           0           
+    3      APPEL         10           
+    4        LDV          0           
+    5        LDV          0           
+    6        LDV          0           
+    7        ADD         -1           
+    8     STORE           0           
+    9     SORTIE         -1       main
+   10     ENTREE         -1 travailler
+   11        LDC          5           
+   12        ADD         -1           
+   13     STORE           5           
+   14        LDC         98           
+   15        LDV          6           
+   16        ADD         -1           
+   17     STORE           4           
+   18        LDV          6           
+   19        LDV          4           
+   20       EGAL         -1           
+   21     SIFAUX         25           
+   22        LDC          7           
+   23     STORE           5           
+   24       SAUT         27           
+   25        LDC          4           
+   26     STORE           4           
+   27        LDC          5           
+   28        LDV          6           
+   29        ADD         -1           
+   30     STORE           4           
+   31        LDV          5           
+   32        LDV          6           
+   33        INF         -1           
+   34 TANTQUEFAUX         38           
+   35        LDC         14           
+   36     STORE           5           
+   37    TANTQUE         31           
+   38        LDV          6           
+   39        LDV          4           
+   40       EGAL         -1           
+   41     SIFAUX         45           
+   42        LDC          7           
+   43     STORE           5           
+   44       SAUT         47           
+   45        LDC          4           
+   46     STORE           4           
+   47        LDC          7           
+   48     STORE           3           
+   49        LDC          5           
+   50     SORTIE         -1 travailler
+   51     RETOUR          4           
+---------------------------------------------
+
+
